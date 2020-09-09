@@ -729,15 +729,15 @@
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1HJ7CHDD6lRICkhF3F33umaJ', quantity: 1}],
+      lineItems: [{price: 'price_1HIdauDD6lRICkhFByYOMNko', quantity: 1}],
       mode: 'payment',
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://effi-tech.github.io/effitech',
-      cancelUrl: 'https://effi-tech.github.io/effitech',
+      successUrl: 'https://effi-tech.github.io/effitech_thanks',
+      cancelUrl: 'https://effi-tech.github.io/effitech_failed'
     })
     .then(function (result) {
       if (result.error) {
@@ -754,15 +754,15 @@
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1HJ7CHDD6lRICkhF3F33umaJ', quantity: 1}],
+      lineItems: [{price: 'price_1HIdauDD6lRICkhFByYOMNko', quantity: 1}],
       mode: 'payment',
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://effi-tech.github.io/effitech',
-      cancelUrl: 'https://effi-tech.github.io/effitech',
+      successUrl: 'https://effi-tech.github.io/effitech_thanks',
+      cancelUrl: 'https://effi-tech.github.io/effitech_failed',
     })
     .then(function (result) {
       if (result.error) {
